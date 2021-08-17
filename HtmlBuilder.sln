@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31605.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HtmlBuilder.Example", "src\HtmlBuilder.Example\HtmlBuilder.Example.csproj", "{F71D7866-1990-4733-A804-7A6C6E263BF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HtmlBuilder.Example", "src\HtmlBuilder.Example\HtmlBuilder.Example.csproj", "{F71D7866-1990-4733-A804-7A6C6E263BF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HtmlBuilder", "src\HtmlBuilder\HtmlBuilder.csproj", "{EAA81FA0-679D-4EBB-90AA-1525742BD772}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{F71D7866-1990-4733-A804-7A6C6E263BF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F71D7866-1990-4733-A804-7A6C6E263BF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F71D7866-1990-4733-A804-7A6C6E263BF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAA81FA0-679D-4EBB-90AA-1525742BD772}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAA81FA0-679D-4EBB-90AA-1525742BD772}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAA81FA0-679D-4EBB-90AA-1525742BD772}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAA81FA0-679D-4EBB-90AA-1525742BD772}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
