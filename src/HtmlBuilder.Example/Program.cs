@@ -9,7 +9,7 @@ namespace HtmlBuilder.Example
             var root = Html.Div();
 
             var h1 = Html.Heading(1);
-            h1.AddChild(Html.TextBloc("Hello World !"));
+            h1.AddChild(Html.TextBlock("Hello World !"));
             root.AddChild(h1);
 
             var paragraph = Html.Paragraph();
@@ -17,12 +17,12 @@ namespace HtmlBuilder.Example
             var li = Html.ListItem();
             paragraph.AddChild(ul);
             ul.AddChild(li);
-            li.AddChild(Html.TextBloc("This is a first test."));
+            li.AddChild(Html.TextBlock("This is a first test."));
             root.AddChild(paragraph);
 
             root.AddChild(Html.HorizontalRule());
 
-            root.AddChild(Html.TextBloc("This is a second test.", new InlineTag("strong", KeyValuePair.Create("class", "second"))));
+            root.AddChild(Html.TextBlock("This is a second test.", new InlineTag("strong", KeyValuePair.Create("class", "second"))));
 
             var html = root.ToString();
             /* html:

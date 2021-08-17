@@ -49,7 +49,7 @@ namespace HtmlBuilder
             return tag;
         }
 
-        public static Html TextBloc(string text, params InlineTag[] inlines)
+        public static Html TextBlock(string text, params InlineTag[] inlines)
         {
             var builder = new HtmlContentBuilder();
             var rootTag = new Html(builder);
