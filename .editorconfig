@@ -1,0 +1,19 @@
+root = true
+# All files
+[*]
+indent_style = space
+
+# Code files
+[*.cs]
+indent_size = 4
+insert_final_newline = false
+
+# Organize usings
+dotnet_sort_system_directives_first = true
+
+# StyleCop
+dotnet_diagnostic.SA1101.severity = none # disable this prefixing
+dotnet_diagnostic.SA1200.severity = none # disable using directives inside
+dotnet_diagnostic.SA1600.severity = none # disable xml documentation check (TODO: need to be fixed)
+dotnet_diagnostic.SA1601.severity = none # disable xml documentation check (TODO: need to be fixed)
+dotnet_diagnostic.SA1633.severity = none # disable file header requirement
