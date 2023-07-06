@@ -27,6 +27,7 @@ root.AddChild(Html.TextBlock("This is a second test.",
 
 var span = Html.Span();
 span.AddChild(Html.TextBlock("Text is third test."));
+span.AddChild(Html.TextBlock("Text is third test.").SetText("This is fourth test."));
 root.AddChild(span);
 
 var html = root.ToString();
@@ -51,6 +52,8 @@ root = Html.Div()
             Html.Span()
                 .AddChild(
                     Html.TextBlock("Text is third test.")
+                ).AddChild(
+                    Html.TextBlock("Text is third test.").SetText("This is fourth test.")
                 )
         )
     );
@@ -64,13 +67,13 @@ Console.Write(htmlChain);
 <div>
     <h1>Hello World!</h1>
     <p>
-        <ul>
-            <li>This is a first test.</li>
-        </ul>
-        <ol>
-            <li>This is a first test.</li>
-        </ol>
+    <ul>
+        <li>This is a first test.</li>
+    </ul>
+    <ol>
+        <li>This is a first test.</li>
+    </ol>
     </p>
-    <hr /><br /><strong class="second">This is a second test.</strong><span>Text is third test.</span>
+    <hr /><br /><strong class="second">This is a second test.</strong><span>Text is third test.This is fourth test.</span>
 </div>
 */

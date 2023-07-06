@@ -41,13 +41,14 @@ public partial class Html
 
     public Html SetText(string text)
     {
-        if (IsTag && TagBuilder != null)
+        switch (IsTag)
         {
-            _ = TagBuilder.InnerHtml.AppendLine(text);
-        }
-        else if (!IsTag && ContentBuilder != null)
-        {
-            _ = ContentBuilder.AppendLine(text);
+            case true when TagBuilder != null:
+                _ = TagBuilder.InnerHtml.SetContent(text);
+                break;
+            case false when ContentBuilder != null:
+                _ = ContentBuilder.SetContent(text);
+                break;
         }
 
         return this;
